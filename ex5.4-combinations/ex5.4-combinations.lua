@@ -1,3 +1,4 @@
+-- This example doesn't work yet...
 ex54 = {}
 ex54.factorial = function(num)
     result = num
@@ -28,11 +29,7 @@ ex54.nonRepeatingCombinations = function(t, m, combos)
     local all_combinations = combos or {}
     local count = ex54.C(#t, m)
 
-    print("\nm is " .. m)
-    print("Count is " .. count)
-
     if m == 0 or count == 0 then
-        print("DUNZO")
         return all_combinations
     end
     all_combinations[m] = ex54.getCombinations(t, m, count)
