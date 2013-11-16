@@ -2,7 +2,8 @@ describe ("Write a function that receives an array and prints all combinations o
     local ex54
 
     before_each(function()
-        ex54 = dofile('/Users/mhernandez/Code/Lua/ex5.4-combinations/ex5.4-combinations.lua')
+        package.path = package.path .. ";../?.lua"
+        ex54 = dofile('ex5.4-combinations.lua')
     end)
 
     describe("The number of combinations requires the use of factorial", function()
