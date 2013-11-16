@@ -46,14 +46,6 @@ describe ("Write a function that receives an array and prints all combinations o
     end)
 
     describe("Displaying the non-repeating combinations", function()
-        --it("Should return 1 combination for a table with 1 element", function()
-            --expected_result = {
-                --{"Apple"},
-            --}
-            --assert.are.same(
-                --expected_result, ex54.nonRepeatingCombinations({"Apple"})
-            --)
-        --end)
         it("Should return 3 combinations for a table with 2 elements", function()
             expected_result = {
                 {"Apple", "Orange"},
